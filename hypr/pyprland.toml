@@ -1,0 +1,17 @@
+[pyprland]
+plugins = [
+  "scratchpads"
+]
+
+[scratchpads.music]
+animation = "fromTop"
+command = "kitty --class music -e ncspot"
+class = "music"
+size = "75% 60%"
+
+[scratchpads.htop]
+animation = "fromTop"
+command = "kitty --class htop -e htop"
+class = "htop"
+size = "75% 60%"
+

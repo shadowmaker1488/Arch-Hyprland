@@ -1,0 +1,5 @@
+[plugin]
+deps = [{ use = "yazi-rs/plugins#chmod", commit = "06e5fe1" }, { use = "KKV9/compress", commit = "7353ab9" }]
+
+[flavor]
+deps = []

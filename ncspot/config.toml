@@ -1,0 +1,31 @@
+[configuration]
+"audio_cache" = "true"
+"audio_cache_size" = "5000"
+
+[keybindings]
+"," = "seek -6000"
+"." = "seek +6000"
+"Space" = "playpause"
+"Shift+g" = "move bottom"
+"Shift+u" = "move top"
+"-" = "voldown 5"
+"+" = "volup 5"
+
+[theme]
+background = "black"
+primary = "light white"
+secondary = "light black"
+title = "green"
+playing = "green"
+playing_selected = "light green"
+playing_bg = "black"
+highlight = "light white"
+highlight_bg = "#484848"
+error = "light white"
+error_bg = "red"
+statusbar = "black"
+statusbar_progress = "green"
+statusbar_bg = "green"
+cmdline = "light white"
+cmdline_bg = "black"
+search_match = "light red"

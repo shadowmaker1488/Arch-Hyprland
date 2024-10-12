@@ -1,0 +1,37 @@
+#/bin/bash
+
+# BASIC
+alias rm="rm -rfI"
+alias ci="zi"
+alias cdd="cd /mnt/Disk2"
+alias ll="ls -al"
+alias cp="cp -r"
+alias cat="bat"
+alias df="df -h -x tmpfs"
+
+# APPS
+alias yt="yt-dlp -f bestaudio+bestvideo --remux-video mp4"
+alias yta="yt-dlp -x --audio-format mp3"
+alias yt-album="yt-dlp -x --audio-format mp3 --split-chapters --audio-quality 0"
+
+alias calc="rofi -show calc"
+
+# wf-recorder 
+alias record="wf-recorder -a=alsa_output.pci-0000_00_1f.3.analog-stereo.monitor -f"
+alias record-area='wf-recorder -g "$(slurp)" -a=alsa_output.pci-0000_00_1f.3.analog-stereo.monitor -f'
+alias record-mic="wf-recorder -a analog-input-internal-mic -f"
+
+# CONFIG FILES 
+alias nvh="nvim ~/.config/hypr/hyprland.conf"
+alias nvs="nvim ~/.dotfiles/setup.sh"
+
+# COMMANDS
+alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+
+alias update-mirrors="sudo reflector --latest 20 --sort rate --download-timeout 30 --save /etc/pacman.d/mirrorlist --verbose"
+
+# mount/umount android
+alias mount-android="simple-mtpfs --device 1 /mnt/android"
+alias umount-android="fusermount -u /mnt/android"
+
+
