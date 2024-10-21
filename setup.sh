@@ -33,7 +33,9 @@ yay -S yazi --noconfirm
 yay -S dragon-drop-git --noconfirm
 yay -S downgrade --noconfirm
 yay -S swww --noconfirm
+yay -S waypaper --noconfirm
 yay -S udiskie --noconfirm
+yay -S paccache-hook --noconfirm
 yay -S hyprcursor-git --noconfirm
 yay -S hyprland-git --noconfirm
 yay -S pyprland-git --noconfirm
@@ -129,6 +131,7 @@ sudo systemctl enable tlp
 sudo systemctl enable ufw 
 sudo ufw enable 
 sudo systemctl enable cronie 
+sudo systemctl enable paccache.timer 
 sudo systemctl enable cups 
 sudo updatedb 
 
