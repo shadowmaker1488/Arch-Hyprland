@@ -23,7 +23,9 @@ alias record-mic="wf-recorder -a analog-input-internal-mic -f"
 
 # CONFIG FILES 
 alias nvh="nvim ~/.config/hypr/hyprland.conf"
-alias nvs="nvim ~/.dotfiles/setup.sh"
+alias nvw="nvim ~/.config/waybar/config"
+alias nvx="nvim ~/.config/sxhkd/sxhkdrc"
+alias nvs="nvim ~/.dotfiles/hypr/setup.sh"
 
 # COMMANDS
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
