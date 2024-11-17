@@ -36,12 +36,12 @@ yay -S swww --noconfirm
 yay -S waypaper --noconfirm
 yay -S udiskie --noconfirm
 yay -S paccache-hook --noconfirm
-yay -S hyprcursor-git --noconfirm
-yay -S hyprland-git --noconfirm
-yay -S pyprland-git --noconfirm
+yay -S hyprcursor --noconfirm
+yay -S hyprland --noconfirm
+yay -S pyprland --noconfirm
 yay -S hyprlock --noconfirm
 yay -S hypridle --noconfirm
-yay -S xdg-desktop-portal-hyprland-git --noconfirm
+yay -S xdg-desktop-portal-hyprland --noconfirm
 yay -S lxqt-policykit --noconfirm
 yay -S trashy --noconfirm
 yay -S subliminal --noconfirm
