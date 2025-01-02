@@ -38,6 +38,7 @@ yay -S udiskie --noconfirm
 yay -S paccache-hook --noconfirm
 yay -S hyprcursor --noconfirm
 yay -S hyprland --noconfirm
+yay -S hyprland-qtutils
 yay -S pyprland --noconfirm
 yay -S hyprlock --noconfirm
 yay -S hypridle --noconfirm
