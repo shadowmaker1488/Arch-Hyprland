@@ -100,7 +100,7 @@ yay -S ventoy-bin --noconfirm
 yay -S xidel-bin --noconfirm
 yay -S yt-dlp --noconfirm
 yay -S wl-clipboard --noconfirm
-yay -S rofi-wayland --noconfirm
+yay -S rofi --noconfirm
 yay -S rofi-calc-git --noconfirm
 yay -S wlsunset --noconfirm
 yay -S xdg-user-dirs --noconfirm
