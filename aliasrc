@@ -8,6 +8,7 @@ alias ll="ls -al"
 alias cp="cp -r"
 alias cat="bat"
 alias df="df -h -x tmpfs"
+alias f="fzf"
 
 # APPS
 alias yt="yt-dlp -f bestaudio+bestvideo --remux-video mp4"
