@@ -32,6 +32,7 @@ yay -S kitty --noconfirm
 yay -S yazi --noconfirm
 yay -S dragon-drop-git --noconfirm
 yay -S downgrade --noconfirm
+yay -S python-ffsubsync --noconfirm
 yay -S swww --noconfirm
 yay -S waypaper --noconfirm
 yay -S udiskie --noconfirm
@@ -45,7 +46,7 @@ yay -S hypridle --noconfirm
 yay -S xdg-desktop-portal-hyprland --noconfirm
 yay -S lxqt-policykit --noconfirm
 yay -S trashy --noconfirm
-yay -S subliminal --noconfirm
+yay -S subliminal-git --noconfirm
 yay -S python-ffsubsync-venv --noconfirm
 yay -S swaync --noconfirm
 yay -S simple-mtpfs --noconfirm
