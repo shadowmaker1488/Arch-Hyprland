@@ -10,6 +10,7 @@
 "Shift+u" = "move top"
 "-" = "voldown 5"
 "+" = "volup 5"
+"p" = "add"
 
 [theme]
 background = "black"

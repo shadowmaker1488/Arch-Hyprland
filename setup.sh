@@ -133,7 +133,6 @@ sudo systemctl enable tlp
 sudo systemctl enable ufw 
 sudo ufw enable 
 sudo systemctl enable cronie 
-sudo systemctl enable paccache.timer 
 sudo systemctl enable cups 
 sudo updatedb 
 
