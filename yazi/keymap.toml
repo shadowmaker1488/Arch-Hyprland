@@ -84,6 +84,7 @@ keymap = [
 	{ on = [ "z" ],         run = "plugin zoxide",              desc = "Jump to a directory using zoxide" },
 	{ on = [ "Z" ],         run = "plugin fzf",                 desc = "Jump to a directory, or reveal a file using fzf" },
 	{ on = [ "<C-n>" ], run = ''' shell 'dragon-drop -x -i -T "$1"' --confirm ''',	desc = "Drag & Drop" },
+	{ on = [ "<C-m>" ],         run = "plugin mount",                 desc = "Mount devices" },
 
 	# Copy
 	{ on = [ "c", "c" ], run = "copy path",             desc = "Copy the absolute path" },

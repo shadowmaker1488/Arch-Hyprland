@@ -135,8 +135,6 @@ sudo ufw enable
 sudo systemctl enable cronie 
 sudo systemctl enable cups 
 sudo updatedb 
-
-# sudo systemctl disable NetworkManager-wait-online.service
 sudo systemctl enable reflector.timer
 sudo systemctl mask systemd-rfkill.service 
 sudo systemctl mask systemd-rfkill.socket
@@ -178,6 +176,9 @@ ya pack -a yazi-rs/plugins#chmod
 
 # Yazi archive plugin
 ya pack -a KKV9/compress
+
+# Yazi mount plugin
+ya pack -a yazi-rs/plugins:mount
 
 # Oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

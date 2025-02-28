@@ -1,5 +1,22 @@
-[plugin]
-deps = [{ use = "yazi-rs/plugins#chmod", commit = "06e5fe1" }, { use = "KKV9/compress", commit = "7353ab9" }, { use = "yazi-rs/plugins:smart-enter", rev = "7afba3a" }]
+[[plugin.deps]]
+use = "yazi-rs/plugins:chmod"
+rev = ""
+hash = "d2487da8aaef96eff845cdc3068ade28"
+
+[[plugin.deps]]
+use = "KKV9/compress"
+rev = ""
+hash = "33f425688556e65b1b9973d4fbd2ae76"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-enter"
+rev = "7afba3a"
+hash = "c1a2739e9ef2d837030ccb4267be3ed1"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:mount"
+rev = "5186af7"
+hash = "5c4d8080367dd2561a18c1cf5a1dd295"
 
 [flavor]
 deps = []
