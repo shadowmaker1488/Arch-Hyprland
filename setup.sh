@@ -44,7 +44,7 @@ yay -S pyprland --noconfirm
 yay -S hyprlock --noconfirm
 yay -S hypridle --noconfirm
 yay -S xdg-desktop-portal-hyprland --noconfirm
-yay -S lxqt-policykit --noconfirm
+yay -S hyprpolkitagent --noconfirm
 yay -S trashy --noconfirm
 yay -S subliminal-git --noconfirm
 yay -S python-ffsubsync-venv --noconfirm
