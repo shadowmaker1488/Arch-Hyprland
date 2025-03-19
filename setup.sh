@@ -39,7 +39,7 @@ yay -S udiskie --noconfirm
 yay -S paccache-hook --noconfirm
 yay -S hyprcursor --noconfirm
 yay -S hyprland --noconfirm
-yay -S hyprland-qtutils
+yay -S hyprland-qtutils --noconfirm
 yay -S pyprland --noconfirm
 yay -S hyprlock --noconfirm
 yay -S hypridle --noconfirm
@@ -114,14 +114,6 @@ yay -S wf-recorder --noconfirm
 yay -S perl-image-exiftool --noconfirm
 yay -S xorg-xhost --noconfirm
 yay -S zoxide --noconfirm
-
-# install drivers
-yay -S xf86-video-amdgpu --noconfirm
-yay -S intel-media-driver --noconfirm
-yay -S intel-ucode --noconfirm
-yay -S lib32-vulkan-intel --noconfirm
-yay -S libva-intel-driver --noconfirm
-yay -S vulkan-intel --noconfirm
 
 # update file saving location
 xdg-user-dirs-update
