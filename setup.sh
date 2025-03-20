@@ -60,7 +60,7 @@ yay -S waybar --noconfirm
 yay -S tlp --noconfirm
 yay -S imagemagick --noconfirm
 yay -S aegisub --noconfirm
-yay -S firefox --noconfirm
+yay -S floorp-bin --noconfirm
 yay -S fzf --noconfirm
 yay -S lynx --noconfirm
 yay -S clamtk --noconfirm
