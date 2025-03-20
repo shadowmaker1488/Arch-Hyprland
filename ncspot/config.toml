@@ -7,7 +7,7 @@
 "." = "seek +6000"
 "Space" = "playpause"
 "Shift+g" = "move bottom"
-"Shift+u" = "move top"
+"g" = "move top"
 "-" = "voldown 5"
 "+" = "volup 5"
 "p" = "add"
