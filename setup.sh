@@ -148,8 +148,8 @@ xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.oasis.opendoc
 xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.ms-powerpoint
 xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.openxmlformats-officedocument.presentationml.presentation
 
-# Firefox
-xdg-mime default firefox.desktop c-scheme-handler/http    
+# Browser xdg
+xdg-mime default floorp.desktop c-scheme-handler/http    
 
 # složky
 sudo mkdir /mnt/Disk2 && sudo chown $USER:$USER /mnt/Disk2
