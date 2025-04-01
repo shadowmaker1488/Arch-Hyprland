@@ -27,6 +27,7 @@ o = {
     -- This isn't necessary unless you want these providers.
     -- split user/password with any of ": |,"
     -- user/pass can't contain these
+    titulky = "tvtomasa;megadeth",
     addic7ed = "",
     legendastv = "",
     opensubtitles = "",
@@ -63,7 +64,7 @@ function main()
     local t = {}
     t.args = {o.path}
 
-    for _, i in ipairs({"addic7ed", "legendastv",
+    for _, i in ipairs({"titulky", "addic7ed", "legendastv",
         "opensubtitles", "subscenter"}) do
         if o[i] and o[i] ~= "" then
             local user, pass =
