@@ -13,6 +13,8 @@ cd
 mv ~/.config/Obrázky .
 mv ~/.config/zshrc ~/.zshrc
 mv ~/.config/rofi-power-menu ~/.local/bin
+mv ~/.config/themes ~/.themes
+mv ~/.config/icons ~/.icons
 
 # install programs
 yay -S adobe-source-han-sans-cn-fonts --noconfirm
