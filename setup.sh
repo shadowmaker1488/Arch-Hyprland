@@ -18,6 +18,7 @@ mv ~/.config/icons ~/.icons
 
 # install programs
 yay -S adobe-source-han-sans-cn-fonts --noconfirm
+yay -S adwaita-fonts --noconfirm
 yay -S adobe-source-han-sans-jp-fonts  --noconfirm
 yay -S adobe-source-han-sans-kr-fonts --noconfirm
 yay -S atool --noconfirm
@@ -43,7 +44,7 @@ yay -S hyprcursor --noconfirm
 yay -S hyprland --noconfirm
 yay -S hyprland-qtutils --noconfirm
 yay -S pyprland --noconfirm
-yay -S hyprlock --noconfirm
+yay -S swaylock-effects --noconfirm
 yay -S hypridle --noconfirm
 yay -S xdg-desktop-portal-hyprland --noconfirm
 yay -S hyprpolkitagent --noconfirm

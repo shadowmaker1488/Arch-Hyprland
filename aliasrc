@@ -5,7 +5,7 @@ alias rm="rm -rfI"
 alias ci="zi"
 alias cdd="cd /mnt/Disk2"
 alias ll="ls -al"
-alias cp="cp -r"
+alias cp="cp -ri"
 alias cat="bat"
 alias df="df -h -x tmpfs"
 alias f="fzf"
@@ -25,8 +25,8 @@ alias record-mic="wf-recorder -a analog-input-internal-mic -f"
 # CONFIG FILES 
 alias nvh="nvim ~/.config/hypr/hyprland.conf"
 alias nvw="nvim ~/.config/waybar/config"
-alias nvx="nvim ~/.config/sxhkd/sxhkdrc"
 alias nvs="nvim ~/.dotfiles/hyprland/setup.sh"
+alias nva="nvim ~/.config/aliasrc"
 
 # COMMANDS
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"

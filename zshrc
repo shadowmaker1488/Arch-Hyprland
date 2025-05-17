@@ -113,8 +113,7 @@ source ~/.config/aliasrc
 
 source ~/.zshenv
 
-# Zoxide
-eval "$(zoxide init --cmd cd zsh)"
+# zoxide
 eval "$(zoxide init zsh)"
 
 # extract function
