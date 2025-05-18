@@ -1,0 +1,6 @@
+#!/bin/bash
+clock
+timestr=%R
+#indicator
+indicator-radius=100
+image=~/Obrázky/Tapety/rome.jpg
