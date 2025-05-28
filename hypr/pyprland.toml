@@ -15,3 +15,9 @@ command = "kitty --class htop -e htop"
 class = "htop"
 size = "75% 60%"
 
+[scratchpads.mail]
+animation = "fromTop"
+command = "kitty --class mail -e aerc"
+class = "mail"
+size = "75% 60%"
+
