@@ -2,7 +2,6 @@
 
 # BASIC
 alias rm="rm -rfI"
-alias ci="zi"
 alias cdd="cd /mnt/Disk2"
 alias ll="ls -al"
 alias cp="cp -ri"

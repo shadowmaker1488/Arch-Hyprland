@@ -24,7 +24,7 @@ yay -S adobe-source-han-sans-kr-fonts --noconfirm
 yay -S atool --noconfirm
 yay -S bat --noconfirm
 yay -S tree --noconfirm
-yay -S blueman --noconfirm
+yay -S bluetui --noconfirm
 yay -S breeze --noconfirm
 yay -S gdu --noconfirm
 yay -S ncspot --noconfirm 
