@@ -23,6 +23,7 @@ yay -S adobe-source-han-sans-jp-fonts  --noconfirm
 yay -S adobe-source-han-sans-kr-fonts --noconfirm
 yay -S atool --noconfirm
 yay -S bat --noconfirm
+yay -S caligula --noconfirm
 yay -S tree --noconfirm
 yay -S bluetui --noconfirm
 yay -S breeze --noconfirm
@@ -73,7 +74,6 @@ yay -S gparted --noconfirm
 yay -S gvfs --noconfirm
 yay -S ufw --noconfirm
 yay -S htop --noconfirm
-yay -S onlyoffice-bin --noconfirm
 yay -S man-db --noconfirm
 yay -S mpv --noconfirm
 yay -S mpv-mpris --noconfirm
@@ -100,7 +100,6 @@ yay -S unrar --noconfirm
 yay -S unzip --noconfirm
 yay -S zip --noconfirm
 yay -S veracrypt --noconfirm
-yay -S ventoy-bin --noconfirm
 yay -S xidel-bin --noconfirm
 yay -S yt-dlp --noconfirm
 yay -S wl-clipboard --noconfirm

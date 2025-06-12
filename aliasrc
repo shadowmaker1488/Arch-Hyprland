@@ -11,8 +11,8 @@ alias f="fzf"
 
 # APPS
 alias yt="yt-dlp -f bestaudio+bestvideo --remux-video mp4"
-alias yta="yt-dlp -x --audio-format mp3"
-alias yt-album="yt-dlp -x --audio-format mp3 --split-chapters --audio-quality 0"
+alias yta="yt-dlp -x --audio-format mp3 --write-thumbnail --convert-thumbnails jpg"
+alias yt-album="yt-dlp -x --audio-format mp3 --split-chapters --audio-quality 0 --write-thumbnail --convert-thumbnails jpg"
 
 alias calc="rofi -show calc"
 
