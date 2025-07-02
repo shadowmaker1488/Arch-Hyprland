@@ -318,10 +318,9 @@ run  = "plugin chmod"
 desc = "Chmod on selected files"
 
 [[mgr.prepend_keymap]]
-on   = [ "c", "a" ]
-run  = "plugin compress"
-desc = "Archive selected files"
-
+on = ["c", "a"]
+run = "plugin ouch"
+desc = "Compress archives with ouch"
 
 [[mgr.prepend_keymap]]
 on  = "y"

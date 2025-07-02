@@ -23,6 +23,7 @@ yay -S adobe-source-han-sans-kr-fonts --noconfirm
 yay -S adwaita-fonts --noconfirm
 yay -S aerc --noconfirm
 yay -S atool --noconfirm
+yay -S ouch --noconfirm
 yay -S bat --noconfirm
 yay -S bluetui --noconfirm
 yay -S breeze --noconfirm
@@ -176,6 +177,9 @@ ya pack -a KKV9/compress
 
 # Yazi mount plugin
 ya pack -a yazi-rs/plugins:mount
+
+# yazi ouch archives
+ya pack -a ndtoan96/ouch
 
 # Oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

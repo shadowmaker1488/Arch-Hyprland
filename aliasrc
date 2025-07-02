@@ -2,12 +2,13 @@
 
 # BASIC
 alias rm="rm -rfI"
-alias cdd="cd /mnt/Disk2"
+alias df="dysk"
 alias ll="ls -al"
 alias cp="cp -ri"
 alias cat="bat"
-alias df="df -h -x tmpfs"
+#alias df="df -h -x tmpfs"
 alias f="fzf"
+alias n="nvim"
 
 # APPS
 alias yt="yt-dlp -f bestaudio+bestvideo --remux-video mp4"
@@ -29,11 +30,17 @@ alias nva="nvim ~/.config/aliasrc"
 
 # COMMANDS
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-
 alias update-mirrors="sudo reflector --latest 20 --sort rate --download-timeout 30 --save /etc/pacman.d/mirrorlist --verbose"
+alias yayf="yay -Slq |fzf --multi --preview 'yay -Sii {1}' --preview-window=down:75% | xargs -ro yay -S" 
 
 # mount/umount android
 alias mount-android="simple-mtpfs --device 1 /mnt/android"
 alias umount-android="fusermount -u /mnt/android"
+
+# CD TO PLACES
+alias cdd="cd ~/Dokumenty"
+alias cdD="cd /mnt/Disk2"
+alias cds="cd ~/Stažené"
+alias cdu="/run/media/tom"
 
 
