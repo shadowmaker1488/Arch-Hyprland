@@ -16,14 +16,15 @@ mv ~/.config/rofi-power-menu ~/.local/bin
 mv ~/.config/themes ~/.themes
 mv ~/.config/icons ~/.icons
 
+
 # install programs
+yay -S abook --noconfirm
 yay -S adobe-source-han-sans-cn-fonts --noconfirm
 yay -S adobe-source-han-sans-jp-fonts  --noconfirm
 yay -S adobe-source-han-sans-kr-fonts --noconfirm
 yay -S adwaita-fonts --noconfirm
 yay -S aerc --noconfirm
 yay -S atool --noconfirm
-yay -S ouch --noconfirm
 yay -S bat --noconfirm
 yay -S bluetui --noconfirm
 yay -S breeze --noconfirm
@@ -48,6 +49,7 @@ yay -S gst-plugins-good --noconfirm
 yay -S gvfs --noconfirm
 yay -S htop --noconfirm
 yay -S hyprcursor --noconfirm
+yay -S hyprpicker --noconfirm
 yay -S hypridle --noconfirm
 yay -S hyprland --noconfirm
 yay -S hyprland-qtutils --noconfirm
@@ -65,6 +67,7 @@ yay -S noto-fonts-emoji --noconfirm
 yay -S ntfs-3g --noconfirm
 yay -S nwg-look --noconfirm
 yay -S onlyoffice-bin --noconfirm
+yay -S ouch --noconfirm
 yay -S paccache-hook --noconfirm
 yay -S perl-image-exiftool --noconfirm
 yay -S pulsemixer --noconfirm
@@ -121,6 +124,7 @@ yay -S zathura-pdf-mupdf --noconfirm
 yay -S zip --noconfirm
 yay -S zoxide --noconfirm
 yay -S zsh --noconfirm
+
 # update file saving location
 xdg-user-dirs-update
 
