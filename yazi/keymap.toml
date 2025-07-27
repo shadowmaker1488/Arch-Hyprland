@@ -146,6 +146,7 @@ keymap = [
 	{ on = [ "g", "H" ],       run = "cd ~/Hudba",   desc = "Go Hudba" },
 	{ on = [ "g", "v" ],       run = "cd ~/Videa",   desc = "Go Videa" },
 	{ on = [ "g", "d" ],       run = "cd /mnt/Disk2",   desc = "Go Disk2" },
+	{ on = [ "g", "m" ],       run = "cd /mnt/",   desc = "Go mnt" },
 	{ on = [ ":" ], run = "cd --interactive", desc = "Go directory interactively" },
 
 	# Help

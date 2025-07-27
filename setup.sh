@@ -59,6 +59,7 @@ yay -S kitty --noconfirm
 yay -S lynx --noconfirm
 yay -S man-db --noconfirm
 yay -S mpv --noconfirm
+yay -S mediainfo --noconfirm
 yay -S mpv-mpris --noconfirm
 yay -S ncspot --noconfirm 
 yay -S neovim --noconfirm
@@ -94,7 +95,7 @@ yay -S timeshift --noconfirm
 yay -S tlp --noconfirm
 yay -S trashy --noconfirm
 yay -S tree --noconfirm
-yay -S ttf-font-awesome --noconfirm
+yay -S woff2-font-awesome --noconfirm
 yay -S ttf-jetbrains-mono-nerd --noconfirm
 yay -S ttf-meslo-nerd --noconfirm
 yay -S ttf-ms-win11-auto --noconfirm

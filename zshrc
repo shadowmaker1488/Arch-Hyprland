@@ -143,7 +143,7 @@ extract() {
 
 # Created by `pipx` on 2025-01-03 13:17:23
 export PATH="$PATH:/home/tom/.local/bin"
-export BROWSER=floorp
+export BROWSER=firefox
 
 # vim mode
 set -o vi 
