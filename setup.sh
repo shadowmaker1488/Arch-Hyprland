@@ -40,7 +40,7 @@ yay -S downgrade --noconfirm
 yay -S dragon-drop-git --noconfirm
 yay -S dysk --noconfirm
 yay -S fastfetch --noconfirm
-yay -S floorp-bin --noconfirm
+yay -S firefox --noconfirm
 yay -S fzf --noconfirm
 yay -S gdu --noconfirm
 yay -S gparted --noconfirm
@@ -84,6 +84,7 @@ yay -S qt6ct --noconfirm
 yay -S reflector --noconfirm
 yay -S rofi --noconfirm
 yay -S rofi-calc-git --noconfirm
+yay -S satty --noconfirm
 yay -S simple-mtpfs --noconfirm
 yay -S subliminal --noconfirm
 yay -S subliminal-git --noconfirm
@@ -160,7 +161,7 @@ xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.ms-powerpoint
 xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.openxmlformats-officedocument.presentationml.presentation
 
 # Browser xdg
-xdg-mime default floorp.desktop c-scheme-handler/http    
+xdg-mime default firefox.desktop c-scheme-handler/http    
 
 # složky
 sudo mkdir /mnt/Disk2 && sudo chown $USER:$USER /mnt/Disk2
