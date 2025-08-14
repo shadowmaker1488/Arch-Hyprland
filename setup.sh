@@ -15,14 +15,13 @@ sudo pacman-key --lsign-key 3056513887B78AEB --noconfirm
 sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' --noconfirm
 sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' --noconfirm
 
-# update system
-sudo pacman -Syu --noconfirm
-
 # add chaotic to pacman
 
 sudo sed -i '/^\[options\]/a \
 \n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist' /etc/pacman.conf
 
+# update system
+sudo pacman -Syu --noconfirm
 
 # basic files
 mv ~/.config/Obrázky .
