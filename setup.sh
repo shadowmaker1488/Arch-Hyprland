@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # yay install
 git clone https://aur.archlinux.org/yay.git ~/.config/yay
 cd ~/.config/yay
@@ -47,6 +46,8 @@ yay -S calcurse --noconfirm
 yay -S caligula --noconfirm
 yay -S cantarell-fonts --noconfirm
 yay -S clamtk --noconfirm
+yay -S clipse --noconfirm
+yay -S clipse-gui --noconfirm
 yay -S cronie --noconfirm
 yay -S cups --noconfirm
 yay -S deluge --noconfirm
@@ -63,17 +64,17 @@ yay -S gst-plugins-good --noconfirm
 yay -S gvfs --noconfirm
 yay -S htop --noconfirm
 yay -S hyprcursor --noconfirm
-yay -S hyprpicker --noconfirm
 yay -S hypridle --noconfirm
 yay -S hyprland --noconfirm
 yay -S hyprland-qtutils --noconfirm
+yay -S hyprpicker --noconfirm
 yay -S hyprpolkitagent --noconfirm
 yay -S imagemagick --noconfirm
 yay -S kitty --noconfirm
 yay -S lynx --noconfirm
 yay -S man-db --noconfirm
-yay -S mpv --noconfirm
 yay -S mediainfo --noconfirm
+yay -S mpv --noconfirm
 yay -S mpv-mpris --noconfirm
 yay -S ncspot --noconfirm 
 yay -S neovim --noconfirm
@@ -110,7 +111,6 @@ yay -S timeshift --noconfirm
 yay -S tlp --noconfirm
 yay -S trashy --noconfirm
 yay -S tree --noconfirm
-yay -S woff2-font-awesome --noconfirm
 yay -S ttf-jetbrains-mono-nerd --noconfirm
 yay -S ttf-meslo-nerd --noconfirm
 yay -S ttf-ms-win11-auto --noconfirm
@@ -126,6 +126,7 @@ yay -S wev --noconfirm
 yay -S wf-recorder --noconfirm
 yay -S wl-clipboard --noconfirm
 yay -S wlsunset --noconfirm
+yay -S woff2-font-awesome --noconfirm
 yay -S xdg-desktop-portal-gtk --noconfirm
 yay -S xdg-desktop-portal-hyprland --noconfirm
 yay -S xdg-user-dirs --noconfirm
@@ -140,7 +141,6 @@ yay -S zathura-pdf-mupdf --noconfirm
 yay -S zip --noconfirm
 yay -S zoxide --noconfirm
 yay -S zsh --noconfirm
-
 # update file saving location
 xdg-user-dirs-update
 
