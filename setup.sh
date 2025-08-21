@@ -17,6 +17,7 @@ sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg
 # Adjust pacman 
 sudo sed -i 's/^#Color/Color/' /etc/pacman.conf --noconfirm
 sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf --noconfirm
+sudo sed -i 's/#AutoEnable=true/AutoEnable=false' /etc/bluetooth/main.conf --noconfirm
 
 # add chaotic to pacman
 
@@ -24,7 +25,7 @@ sudo sed -i '/^\[options\]/a \
 \n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist' /etc/pacman.conf
 
 # update system
-sudo pacman -Syu --noconfirm
+yay --noconfirm
 
 # basic files
 mv ~/.config/Obrázky .
@@ -33,6 +34,8 @@ mv ~/.config/rofi-power-menu ~/.local/bin
 mv ~/.config/themes ~/.themes
 mv ~/.config/icons ~/.icons
 
+# Bootloader theme
+sudo mv ~/.config/Grub-Theme-Virtuaverse /boot/grub/themes
 
 # install programs
 yay -S abook --noconfirm
@@ -145,6 +148,7 @@ yay -S zathura-pdf-mupdf --noconfirm
 yay -S zip --noconfirm
 yay -S zoxide --noconfirm
 yay -S zsh --noconfirm
+
 # update file saving location
 xdg-user-dirs-update
 
@@ -164,9 +168,6 @@ sudo systemctl mask systemd-rfkill.socket
 # set default xdg
 # Onlyoffice
 # .odt, .doc, .docx, rtf
-xdg-mime default libreoffice-writer.desktop application/vnd.openxmlformats-officedocument.wordprocessingml.document
-xdg-mime default libreoffice-impress.desktop application/vnd.openxmlformats-officedocument.presentationml.presentation
-xdg-mime default libreoffice-calc.desktop application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 
 #.ods .xls, .xlsx
 xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.oasis.opendocument.spreadsheet
@@ -186,8 +187,6 @@ sudo mkdir /mnt/Disk2 && sudo chown $USER:$USER /mnt/Disk2
 sudo mkdir /mnt/android && sudo chown $USER:$USER /mnt/android
 mkdir .themes && mkdir .icons
 
-# Bootloader theme
-sudo mv ~/.config/Grub-Theme-Virtuaverse /boot/grub/themes
 
 # vim-plugged
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
