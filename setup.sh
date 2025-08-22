@@ -35,7 +35,8 @@ mv ~/.config/themes ~/.themes
 mv ~/.config/icons ~/.icons
 
 # Bootloader theme
-sudo mv ~/.config/Grub-Theme-Virtuaverse /boot/grub/themes
+sudo mv ~/.config/Virtuaverse /boot/grub/themes
+sudo mv ~/.config/Cyberpunk /boot/grub/themes
 
 # install programs
 yay -S abook --noconfirm
