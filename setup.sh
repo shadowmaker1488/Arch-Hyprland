@@ -14,7 +14,7 @@ sudo pacman-key --lsign-key 3056513887B78AEB --noconfirm
 sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' --noconfirm
 sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' --noconfirm
 
-# Adjust pacman 
+# Adjust pacman
 sudo sed -i 's/^#Color/Color/' /etc/pacman.conf --noconfirm
 sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf --noconfirm
 sudo sed -i 's/#AutoEnable=true/AutoEnable=false' /etc/bluetooth/main.conf --noconfirm
@@ -41,7 +41,7 @@ sudo mv ~/.config/Cyberpunk /boot/grub/themes
 # install programs
 yay -S abook --noconfirm
 yay -S adobe-source-han-sans-cn-fonts --noconfirm
-yay -S adobe-source-han-sans-jp-fonts  --noconfirm
+yay -S adobe-source-han-sans-jp-fonts --noconfirm
 yay -S adobe-source-han-sans-kr-fonts --noconfirm
 yay -S adwaita-fonts --noconfirm
 yay -S aerc --noconfirm
@@ -84,7 +84,7 @@ yay -S man-db --noconfirm
 yay -S mediainfo --noconfirm
 yay -S mpv --noconfirm
 yay -S mpv-mpris --noconfirm
-yay -S ncspot --noconfirm 
+yay -S ncspot --noconfirm
 yay -S neovim --noconfirm
 yay -S newsboat --noconfirm
 yay -S noto-fonts-emoji --noconfirm
@@ -127,6 +127,7 @@ yay -S udiskie --noconfirm
 yay -S ufw --noconfirm
 yay -S unrar --noconfirm
 yay -S unzip --noconfirm
+yay -S uwsm --noconfirm
 yay -S veracrypt --noconfirm
 yay -S waybar --noconfirm
 yay -S waypaper --noconfirm
@@ -149,21 +150,20 @@ yay -S zathura-pdf-mupdf --noconfirm
 yay -S zip --noconfirm
 yay -S zoxide --noconfirm
 yay -S zsh --noconfirm
-
 # update file saving location
 xdg-user-dirs-update
 
 # services
 sudo freshclam
 sudo systemctl enable clamav-freshclam-once.timer
-sudo systemctl enable tlp 
-sudo systemctl enable ufw 
-sudo ufw enable 
-sudo systemctl enable cronie 
-sudo systemctl enable cups 
-sudo updatedb 
+sudo systemctl enable tlp
+sudo systemctl enable ufw
+sudo ufw enable
+sudo systemctl enable cronie
+sudo systemctl enable cups
+sudo updatedb
 sudo systemctl enable reflector.timer
-sudo systemctl mask systemd-rfkill.service 
+sudo systemctl mask systemd-rfkill.service
 sudo systemctl mask systemd-rfkill.socket
 
 # set default xdg
@@ -181,13 +181,12 @@ xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.ms-powerpoint
 xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.openxmlformats-officedocument.presentationml.presentation
 
 # Browser xdg
-xdg-mime default firefox.desktop c-scheme-handler/http    
+xdg-mime default firefox.desktop c-scheme-handler/http
 
 # složky
 sudo mkdir /mnt/Disk2 && sudo chown $USER:$USER /mnt/Disk2
 sudo mkdir /mnt/android && sudo chown $USER:$USER /mnt/android
 mkdir .themes && mkdir .icons
-
 
 # vim-plugged
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -213,4 +212,3 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 # Syntax highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-

@@ -147,3 +147,8 @@ export BROWSER=firefox
 
 # vim mode
 set -o vi 
+
+# autostart Hyprland 
+if uwsm check may-start; then
+    exec uwsm start hyprland-uwsm.desktop
+fi
