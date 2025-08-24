@@ -130,7 +130,7 @@ yay -S unzip --noconfirm
 yay -S uwsm --noconfirm
 yay -S veracrypt --noconfirm
 yay -S waybar --noconfirm
-yay -S waypaper --noconfirm
+yay -S waypaper-git --noconfirm
 yay -S wev --noconfirm
 yay -S wf-recorder --noconfirm
 yay -S wl-clipboard --noconfirm
