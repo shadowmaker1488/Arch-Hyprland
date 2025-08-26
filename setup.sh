@@ -168,6 +168,10 @@ sudo systemctl mask systemd-rfkill.socket
 # set default xdg
 # Onlyoffice
 # .odt, .doc, .docx, rtf
+xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.oasis.opendocument.text                                 # .odt
+xdg-mime default onlyoffice-desktopeditors.desktop application/msword                                                      # .doc
+xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.openxmlformats-officedocument.wordprocessingml.document # .docx
+xdg-mime default onlyoffice-desktopeditors.desktop application/rtf                                                         # .rtf
 
 #.ods .xls, .xlsx
 xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.oasis.opendocument.spreadsheet
@@ -186,10 +190,6 @@ xdg-mime default firefox.desktop c-scheme-handler/http
 sudo mkdir /mnt/Disk2 && sudo chown $USER:$USER /mnt/Disk2
 sudo mkdir /mnt/android && sudo chown $USER:$USER /mnt/android
 mkdir .themes && mkdir .icons
-
-# vim-plugged
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # Yazi chmod plugin
 ya pack -a yazi-rs/plugins#chmod
