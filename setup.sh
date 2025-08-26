@@ -160,7 +160,6 @@ sudo systemctl enable tlp
 sudo systemctl enable ufw
 sudo ufw enable
 sudo systemctl enable cronie
-sudo systemctl enable cups
 sudo updatedb
 sudo systemctl enable reflector.timer
 sudo systemctl mask systemd-rfkill.service

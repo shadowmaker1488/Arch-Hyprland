@@ -1,6 +1,7 @@
 map c recolor
 set page-padding 8
 set selection-clipboard clipboard
+set recolor
 
 set completion-group-bg         "#282828"
 set completion-group-fg         "#ebdbb2"
