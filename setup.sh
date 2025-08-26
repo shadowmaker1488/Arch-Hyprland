@@ -8,16 +8,16 @@ cd
 
 # chaotic AUR
 
-sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com --noconfirm
-sudo pacman-key --lsign-key 3056513887B78AEB --noconfirm
+sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
+sudo pacman-key --lsign-key 3056513887B78AEB
 
 sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' --noconfirm
 sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' --noconfirm
 
 # Adjust pacman
-sudo sed -i 's/^#Color/Color/' /etc/pacman.conf --noconfirm
-sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf --noconfirm
-sudo sed -i 's/#AutoEnable=true/AutoEnable=false' /etc/bluetooth/main.conf --noconfirm
+sudo sed -i 's/^#Color/Color/' /etc/pacman.conf
+sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
+sudo sed -i 's/#AutoEnable=true/AutoEnable=false' /etc/bluetooth/main.conf
 
 # add chaotic to pacman
 
@@ -25,7 +25,7 @@ sudo sed -i '/^\[options\]/a \
 \n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist' /etc/pacman.conf
 
 # update system
-yay --noconfirm
+yay -Syu --noconfirm
 
 # basic files
 mv ~/.config/Obrázky .
