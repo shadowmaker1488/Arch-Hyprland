@@ -6,6 +6,9 @@ cd ~/.config/yay
 makepkg -si --noconfirm
 cd
 
+# update system
+sudo pacman -Syu --noconfirm
+
 # chaotic AUR
 
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
@@ -24,8 +27,7 @@ sudo sed -i 's/#AutoEnable=true/AutoEnable=false' /etc/bluetooth/main.conf
 sudo sed -i '/^\[options\]/a \
 \n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist' /etc/pacman.conf
 
-# update system
-yay -Syu --noconfirm
+sudo pacman -Syu --noconfirm
 
 # basic files
 mv ~/.config/Obrázky .
