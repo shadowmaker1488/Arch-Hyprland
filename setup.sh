@@ -31,6 +31,8 @@ fi
 sudo pacman -Syu --noconfirm
 
 # basic files
+mkdir ~/.local && mkdir ~/.local/bin/
+
 mv ~/.config/Obrázky .
 mv ~/.config/zshrc ~/.zshrc
 mv ~/.config/rofi-power-menu ~/.local/bin
