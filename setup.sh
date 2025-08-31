@@ -11,21 +11,22 @@ sudo pacman -Syu --noconfirm
 
 # chaotic AUR
 
-sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
-sudo pacman-key --lsign-key 3056513887B78AEB
+if [[ "$(uname -m)" == "x86_64" ]] && [ -z "$DISABLE_CHAOTIC" ]; then
+  # Try installing Chaotic-AUR keyring and mirrorlist
+  if ! pacman-key --list-keys 3056513887B78AEB >/dev/null 2>&1 &&
+    sudo pacman-key --recv-key 3056513887B78AEB &&
+    sudo pacman-key --lsign-key 3056513887B78AEB &&
+    sudo pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' &&
+    sudo pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'; then
 
-sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
-sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
-
-# Adjust pacman
-sudo sed -i 's/^#Color/Color/' /etc/pacman.conf
-sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
-sudo sed -i 's/#AutoEnable=true/AutoEnable=false' /etc/bluetooth/main.conf
-
-# add chaotic to pacman
-
-sudo sed -i '/^\[options\]/a \
-\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist' /etc/pacman.conf
+    # Add Chaotic-AUR repo to pacman config
+    if ! grep -q "chaotic-aur" /etc/pacman.conf; then
+      echo -e '\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist' | sudo tee -a /etc/pacman.conf >/dev/null
+    fi
+  else
+    echo -e "Failed to install Chaotic-AUR, so won't include it in pacman config!"
+  fi
+fi
 
 sudo pacman -Syu --noconfirm
 
