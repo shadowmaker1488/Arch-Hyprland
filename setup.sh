@@ -28,6 +28,11 @@ if [[ "$(uname -m)" == "x86_64" ]] && [ -z "$DISABLE_CHAOTIC" ]; then
   fi
 fi
 
+# sed stuff
+sudo sed -i 's/^#Color/Color/' /etc/pacman.conf
+sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
+sudo sed -i 's/#AutoEnable=true/AutoEnable=false' /etc/bluetooth/main.conf
+
 sudo pacman -Syu --noconfirm
 
 # basic files
