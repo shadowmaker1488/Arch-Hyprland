@@ -44,10 +44,6 @@ mv ~/.config/rofi-power-menu ~/.local/bin
 mv ~/.config/themes ~/.themes
 mv ~/.config/icons ~/.icons
 
-# Bootloader theme
-sudo mv ~/.config/Virtuaverse /boot/grub/themes
-sudo mv ~/.config/Cyberpunk /boot/grub/themes
-
 # install programs
 yay -S abook --noconfirm
 yay -S adobe-source-han-sans-cn-fonts --noconfirm
@@ -164,6 +160,7 @@ yay -S zsh --noconfirm
 xdg-user-dirs-update
 
 # services
+sudo systemctl enable systemd-boot-update.service
 sudo freshclam
 sudo systemctl enable clamav-freshclam-once.timer
 sudo systemctl enable tlp
