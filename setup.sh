@@ -64,7 +64,6 @@ yay -S clipse --noconfirm
 yay -S clipse-gui --noconfirm
 yay -S cronie --noconfirm
 yay -S cups --noconfirm
-yay -S deluge --noconfirm
 yay -S downgrade --noconfirm
 yay -S dragon-drop-git --noconfirm
 yay -S dysk --noconfirm
