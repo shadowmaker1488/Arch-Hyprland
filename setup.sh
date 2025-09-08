@@ -64,9 +64,11 @@ yay -S clipse --noconfirm
 yay -S clipse-gui --noconfirm
 yay -S cronie --noconfirm
 yay -S cups --noconfirm
+yay -S deluge --noconfirm
 yay -S downgrade --noconfirm
 yay -S dragon-drop-git --noconfirm
 yay -S dysk --noconfirm
+yay -S edk2-shell --noconfirm
 yay -S fastfetch --noconfirm
 yay -S firefox --noconfirm
 yay -S fzf --noconfirm
@@ -157,6 +159,9 @@ yay -S zoxide --noconfirm
 yay -S zsh --noconfirm
 # update file saving location
 xdg-user-dirs-update
+
+# EFI shell to systemd-boot
+sudo cp /usr/share/edk2-shell/x64/Shell.efi /boot/shellx64.efi
 
 # services
 sudo systemctl enable systemd-boot-update.service

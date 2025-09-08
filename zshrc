@@ -152,3 +152,7 @@ set -o vi
 if uwsm check may-start; then
     exec uwsm start hyprland-uwsm.desktop
 fi
+
+# auto-correction
+
+setopt CORRECT
