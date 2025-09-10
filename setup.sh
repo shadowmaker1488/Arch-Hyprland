@@ -40,6 +40,7 @@ mkdir ~/.local && mkdir ~/.local/bin/
 
 mv ~/.config/Obrázky .
 mv ~/.config/zshrc ~/.zshrc
+mv ~/.config/zshenv ~/.zshenv
 mv ~/.config/rofi-power-menu ~/.local/bin
 mv ~/.config/themes ~/.themes
 mv ~/.config/icons ~/.icons
@@ -124,6 +125,7 @@ yay -S swww --noconfirm
 yay -S system-config-printer --noconfirm
 yay -S timeshift --noconfirm
 yay -S tlp --noconfirm
+yay -S tlpui --noconfirm
 yay -S trashy --noconfirm
 yay -S tree --noconfirm
 yay -S ttf-jetbrains-mono-nerd --noconfirm
