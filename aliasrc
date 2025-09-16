@@ -10,6 +10,7 @@ alias cat="bat"
 alias f="fzf"
 alias n="nvim"
 alias sn="sudo nvim"
+alias batterylist="upower -i /org/freedesktop/UPower/devices/battery_BAT1"
 
 # APPS
 alias yt="yt-dlp -f bestaudio+bestvideo --remux-video mp4"
@@ -24,10 +25,16 @@ alias record-area='wf-recorder -g "$(slurp)" -a=alsa_output.pci-0000_00_1f.3.ana
 alias record-mic="wf-recorder -a analog-input-internal-mic -f"
 
 # CONFIG FILES 
-alias nvh="nvim ~/.config/hypr/hyprland.conf"
 alias nvw="nvim ~/.config/waybar/config"
 alias nvs="nvim ~/.dotfiles/hyprland/setup.sh"
 alias nva="nvim ~/.config/aliasrc"
+
+# hyprland config files 
+alias hc="nvim ~/.config/hypr/hyprland.conf"
+alias hi="nvim ~/.config/hypr/hypridle.conf"
+alias hl="nvim ~/.config/hypr/hyprlock.conf"
+alias hp="nvim ~/.config/hypr/pyprland.toml"
+
 
 # COMMANDS
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
