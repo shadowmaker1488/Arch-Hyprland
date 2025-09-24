@@ -98,7 +98,8 @@ yay -S newsboat --noconfirm
 yay -S noto-fonts-emoji --noconfirm
 yay -S ntfs-3g --noconfirm
 yay -S nwg-look --noconfirm
-yay -S onlyoffice-bin --noconfirm
+yay -S libreoffice-fresh --noconfirm
+yay -S libreoffice-fresh-cs --noconfirm
 yay -S ouch --noconfirm
 yay -S paccache-hook --noconfirm
 yay -S perl-image-exiftool --noconfirm
@@ -115,7 +116,6 @@ yay -S qt6ct --noconfirm
 yay -S reflector --noconfirm
 yay -S rofi --noconfirm
 yay -S rofi-calc-git --noconfirm
-yay -S satty --noconfirm
 yay -S simple-mtpfs --noconfirm
 yay -S subliminal --noconfirm
 yay -S subliminal-git --noconfirm
