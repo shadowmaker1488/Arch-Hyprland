@@ -98,8 +98,8 @@ yay -S newsboat --noconfirm
 yay -S noto-fonts-emoji --noconfirm
 yay -S ntfs-3g --noconfirm
 yay -S nwg-look --noconfirm
-yay -S libreoffice-fresh --noconfirm
-yay -S libreoffice-fresh-cs --noconfirm
+yay -S libreoffice-still --noconfirm
+yay -S libreoffice-still-cs --noconfirm
 yay -S ouch --noconfirm
 yay -S paccache-hook --noconfirm
 yay -S perl-image-exiftool --noconfirm
