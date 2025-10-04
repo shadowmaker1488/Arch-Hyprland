@@ -167,8 +167,6 @@ sudo cp /usr/share/edk2-shell/x64/Shell.efi /boot/shellx64.efi
 
 # services
 sudo systemctl enable systemd-boot-update.service
-sudo freshclam
-sudo systemctl enable clamav-freshclam-once.timer
 sudo systemctl enable tlp
 sudo systemctl enable ufw
 sudo ufw enable
@@ -179,24 +177,34 @@ sudo systemctl mask systemd-rfkill.service
 sudo systemctl mask systemd-rfkill.socket
 
 # set default xdg
-# Onlyoffice
-# .odt, .doc, .docx, rtf
-xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.oasis.opendocument.text                                 # .odt
-xdg-mime default onlyoffice-desktopeditors.desktop application/msword                                                      # .doc
-xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.openxmlformats-officedocument.wordprocessingml.document # .docx
-xdg-mime default onlyoffice-desktopeditors.desktop application/rtf                                                         # .rtf
-
-#.ods .xls, .xlsx
-xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.oasis.opendocument.spreadsheet
-xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.ms-excel
-xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
-
-# .odp, .ppt, .pptx
-xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.oasis.opendocument.presentation
-xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.ms-powerpoint
-xdg-mime default onlyoffice-desktopeditors.desktop application/vnd.openxmlformats-officedocument.presentationml.presentation
-
 # Browser xdg
+# Writer (text)
+xdg-mime default libreoffice-writer.desktop application/vnd.oasis.opendocument.text
+xdg-mime default libreoffice-writer.desktop application/vnd.oasis.opendocument.text-template
+xdg-mime default libreoffice-writer.desktop application/msword
+xdg-mime default libreoffice-writer.desktop application/vnd.openxmlformats-officedocument.wordprocessingml.document
+xdg-mime default libreoffice-writer.desktop application/rtf
+xdg-mime default libreoffice-writer.desktop text/rtf
+
+# Calc (spreadsheets)
+xdg-mime default libreoffice-calc.desktop application/vnd.oasis.opendocument.spreadsheet
+xdg-mime default libreoffice-calc.desktop application/vnd.oasis.opendocument.spreadsheet-template
+xdg-mime default libreoffice-calc.desktop application/vnd.ms-excel
+xdg-mime default libreoffice-calc.desktop application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+
+# Impress (presentations)
+xdg-mime default libreoffice-impress.desktop application/vnd.oasis.opendocument.presentation
+xdg-mime default libreoffice-impress.desktop application/vnd.oasis.opendocument.presentation-template
+xdg-mime default libreoffice-impress.desktop application/vnd.ms-powerpoint
+xdg-mime default libreoffice-impress.desktop application/vnd.openxmlformats-officedocument.presentationml.presentation
+
+# Draw (graphics)
+xdg-mime default libreoffice-draw.desktop application/vnd.oasis.opendocument.graphics
+
+# Math (formula)
+xdg-mime default libreoffice-math.desktop application/vnd.oasis.opendocument.formula
+
+# Browser
 xdg-mime default firefox.desktop c-scheme-handler/http
 
 # složky
