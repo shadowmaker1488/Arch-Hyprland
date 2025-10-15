@@ -87,6 +87,8 @@ yay -S hyprpicker --noconfirm
 yay -S hyprpolkitagent --noconfirm
 yay -S imagemagick --noconfirm
 yay -S kitty --noconfirm
+yay -S libreoffice-still --noconfirm
+yay -S libreoffice-still-cs --noconfirm
 yay -S lynx --noconfirm
 yay -S man-db --noconfirm
 yay -S mediainfo --noconfirm
@@ -98,8 +100,6 @@ yay -S newsboat --noconfirm
 yay -S noto-fonts-emoji --noconfirm
 yay -S ntfs-3g --noconfirm
 yay -S nwg-look --noconfirm
-yay -S libreoffice-still --noconfirm
-yay -S libreoffice-still-cs --noconfirm
 yay -S ouch --noconfirm
 yay -S paccache-hook --noconfirm
 yay -S perl-image-exiftool --noconfirm
@@ -159,6 +159,7 @@ yay -S zathura-pdf-mupdf --noconfirm
 yay -S zip --noconfirm
 yay -S zoxide --noconfirm
 yay -S zsh --noconfirm
+
 # update file saving location
 xdg-user-dirs-update
 
@@ -209,7 +210,7 @@ xdg-mime default firefox.desktop c-scheme-handler/http
 
 # složky
 sudo mkdir /mnt/Disk2 && sudo chown $USER:$USER /mnt/Disk2
-sudo mkdir /mnt/android && sudo chown $USER:$USER /mnt/android
+sudo mkdir /mnt/phone && sudo chown $USER:$USER /mnt/phone
 
 # Yazi chmod plugin
 ya pack -a yazi-rs/plugins#chmod
