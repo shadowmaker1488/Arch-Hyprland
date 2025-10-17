@@ -84,7 +84,7 @@ yay -S hypridle --noconfirm
 yay -S hyprland --noconfirm
 yay -S hyprland-qtutils --noconfirm
 yay -S hyprpicker --noconfirm
-yay -S hyprpolkitagent --noconfirm
+yay -S lxqt-policykit --noconfirm
 yay -S imagemagick --noconfirm
 yay -S kitty --noconfirm
 yay -S libreoffice-still --noconfirm
