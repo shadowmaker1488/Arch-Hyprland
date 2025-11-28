@@ -84,11 +84,12 @@ yay -S hypridle --noconfirm
 yay -S hyprland --noconfirm
 yay -S hyprland-qtutils --noconfirm
 yay -S hyprpicker --noconfirm
-yay -S lxqt-policykit --noconfirm
 yay -S imagemagick --noconfirm
 yay -S kitty --noconfirm
 yay -S libreoffice-still --noconfirm
 yay -S libreoffice-still-cs --noconfirm
+yay -S localsend --noconfirm
+yay -S lxqt-policykit --noconfirm
 yay -S lynx --noconfirm
 yay -S man-db --noconfirm
 yay -S mediainfo --noconfirm
@@ -159,7 +160,6 @@ yay -S zathura-pdf-mupdf --noconfirm
 yay -S zip --noconfirm
 yay -S zoxide --noconfirm
 yay -S zsh --noconfirm
-
 # update file saving location
 xdg-user-dirs-update
 
