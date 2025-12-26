@@ -10,7 +10,7 @@ alias cat="bat"
 alias f="fzf"
 alias n="nvim"
 alias sn="sudo nvim"
-alias batterylist="upower -i /org/freedesktop/UPower/devices/battery_BAT1"
+alias batteryinfo="upower -i /org/freedesktop/UPower/devices/battery_BAT1"
 
 # APPS
 alias yt="yt-dlp -f bestaudio+bestvideo --remux-video mp4"
@@ -25,7 +25,8 @@ alias record-area='wf-recorder -g "$(slurp)" -a=alsa_output.pci-0000_00_1f.3.ana
 alias record-mic="wf-recorder -a analog-input-internal-mic -f"
 
 # CONFIG FILES 
-alias nvw="nvim ~/.config/waybar/config"
+alias nn="nvim ~/.config/niri/config.kdl"
+alias nw="nvim ~/.config/waybar/config"
 alias nvs="nvim ~/.dotfiles/hyprland/setup.sh"
 alias nva="nvim ~/.config/aliasrc"
 
