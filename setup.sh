@@ -78,11 +78,11 @@ yay -S grimblast-git --noconfirm
 yay -S gst-plugins-good --noconfirm
 yay -S gvfs --noconfirm
 yay -S htop --noconfirm
-yay -S hyprcursor-git --noconfirm
-yay -S hypridle-git --noconfirm
-yay -S hyprland-git --noconfirm
-yay -S hyprland-qtutils-git --noconfirm
-yay -S hyprpicker-git --noconfirm
+yay -S hyprcursor --noconfirm
+yay -S hypridle --noconfirm
+yay -S hyprland --noconfirm
+yay -S hyprland-qtutils --noconfirm
+yay -S hyprpicker --noconfirm
 yay -S imagemagick --noconfirm
 yay -S kitty --noconfirm
 yay -S libreoffice-still --noconfirm
