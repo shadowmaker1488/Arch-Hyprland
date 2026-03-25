@@ -121,7 +121,7 @@ yay -S subliminal --noconfirm
 yay -S subliminal-git --noconfirm
 yay -S swaylock-effects --noconfirm
 yay -S swaync --noconfirm
-yay -S swww --noconfirm
+yay -S awww --noconfirm
 yay -S system-config-printer --noconfirm
 yay -S timeshift --noconfirm
 yay -S tlp --noconfirm
