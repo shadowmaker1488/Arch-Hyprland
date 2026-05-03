@@ -46,12 +46,15 @@ mv ~/.config/themes ~/.themes
 mv ~/.config/icons ~/.icons
 
 # install programs
+# update file saving location
+xdg-user-dirs-update
 yay -S adobe-source-han-sans-cn-fonts --noconfirm
 yay -S adobe-source-han-sans-jp-fonts --noconfirm
 yay -S adobe-source-han-sans-kr-fonts --noconfirm
 yay -S adwaita-fonts --noconfirm
 yay -S aerc --noconfirm
 yay -S atool --noconfirm
+yay -S awww --noconfirm
 yay -S bat --noconfirm
 yay -S bluetui --noconfirm
 yay -S breeze --noconfirm
@@ -121,11 +124,11 @@ yay -S subliminal --noconfirm
 yay -S subliminal-git --noconfirm
 yay -S swaylock-effects --noconfirm
 yay -S swaync --noconfirm
-yay -S awww --noconfirm
 yay -S system-config-printer --noconfirm
 yay -S timeshift --noconfirm
 yay -S tlp --noconfirm
 yay -S tlpui --noconfirm
+yay -S topgrade --noconfirm
 yay -S trashy --noconfirm
 yay -S tree --noconfirm
 yay -S ttf-jetbrains-mono-nerd --noconfirm
@@ -159,9 +162,6 @@ yay -S zathura-pdf-mupdf --noconfirm
 yay -S zip --noconfirm
 yay -S zoxide --noconfirm
 yay -S zsh --noconfirm
-# update file saving location
-xdg-user-dirs-update
-
 # EFI shell to systemd-boot
 sudo cp /usr/share/edk2-shell/x64/Shell.efi /boot/shellx64.efi
 
