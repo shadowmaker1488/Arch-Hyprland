@@ -45,14 +45,16 @@ mv ~/.config/rofi-power-menu ~/.local/bin
 mv ~/.config/themes ~/.themes
 mv ~/.config/icons ~/.icons
 
+# EFI shell to systemd-boot
 # install programs
 # update file saving location
+sudo cp /usr/share/edk2-shell/x64/Shell.efi /boot/shellx64.efi
+
 xdg-user-dirs-update
 yay -S adobe-source-han-sans-cn-fonts --noconfirm
 yay -S adobe-source-han-sans-jp-fonts --noconfirm
 yay -S adobe-source-han-sans-kr-fonts --noconfirm
 yay -S adwaita-fonts --noconfirm
-yay -S aerc --noconfirm
 yay -S atool --noconfirm
 yay -S awww --noconfirm
 yay -S bat --noconfirm
@@ -78,6 +80,7 @@ yay -S fzf --noconfirm
 yay -S gdu --noconfirm
 yay -S gparted --noconfirm
 yay -S grimblast-git --noconfirm
+yay -S grubforge --noconfirm
 yay -S gst-plugins-good --noconfirm
 yay -S gvfs --noconfirm
 yay -S htop --noconfirm
@@ -162,9 +165,6 @@ yay -S zathura-pdf-mupdf --noconfirm
 yay -S zip --noconfirm
 yay -S zoxide --noconfirm
 yay -S zsh --noconfirm
-# EFI shell to systemd-boot
-sudo cp /usr/share/edk2-shell/x64/Shell.efi /boot/shellx64.efi
-
 # services
 sudo systemctl enable systemd-boot-update.service
 sudo systemctl enable tlp
