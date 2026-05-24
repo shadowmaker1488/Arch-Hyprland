@@ -125,7 +125,7 @@ yay -S rofi-calc-git --noconfirm
 yay -S simple-mtpfs --noconfirm
 yay -S subliminal --noconfirm
 yay -S subliminal-git --noconfirm
-yay -S swaylock-effects --noconfirm
+yay -S hyprlock --noconfirm
 yay -S swaync --noconfirm
 yay -S system-config-printer --noconfirm
 yay -S timeshift --noconfirm

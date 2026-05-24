@@ -20,9 +20,10 @@ alias yt-album="yt-dlp -x --audio-format mp3 --split-chapters --audio-quality 0 
 alias calc="rofi -show calc"
 
 # wf-recorder 
-alias record="wf-recorder -a=alsa_output.pci-0000_00_1f.3.analog-stereo.monitor -f"
+alias record="wf-recorder -a=alsa_output.pci-0000_00_1f.3.analog-stereo.monitor --geometry 1920x1080 -f"
 alias record-area='wf-recorder -g "$(slurp)" -a=alsa_output.pci-0000_00_1f.3.analog-stereo.monitor -f'
-alias record-mic="wf-recorder -a analog-input-internal-mic -f"
+alias record-area-mic='wf-recorder -g "$(slurp)" -a=alsa_output.pci-0000_00_1f.3.analog-stereo.monitor --audio -f'
+alias record-mic="wf-recorder -a analog-input-internal-mic --geometry 1920x1080 -f"
 
 # CONFIG FILES 
 alias nn="nvim ~/.config/niri/config.kdl"
@@ -31,7 +32,7 @@ alias nvs="nvim ~/.dotfiles/hyprland/setup.sh"
 alias nva="nvim ~/.config/aliasrc"
 
 # hyprland config files 
-alias hc="nvim ~/.config/hypr/hyprland.conf"
+alias hc="nvim ~/.config/hypr/hyprland.lua"
 alias hi="nvim ~/.config/hypr/hypridle.conf"
 alias hl="nvim ~/.config/hypr/hyprlock.conf"
 alias hp="nvim ~/.config/hypr/pyprland.toml"
