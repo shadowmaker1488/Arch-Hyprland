@@ -187,23 +187,53 @@ hl.device({
 
 -- WINDOW RULES
 -- See https://wiki.hyprland.org/Configuring/Window-Rules/ for more
-hl.window_rule({ name = "waypaper-float", match = { class = "waypaper" }, float = true })
-hl.window_rule({ name = "waypaper-center", match = { class = "waypaper" }, center = true })
-hl.window_rule({ name = "waypaper-size", match = { class = "waypaper" }, size = { 560, 570 } })
+hl.window_rule({
+	name = "waypaper",
+	match = {
+		class = "waypaper",
+	},
+	float = true,
+	center = true,
+	size = { 560, 570 },
+})
 
-hl.window_rule({ name = "clipse-gui-float", match = { class = "clipse-gui" }, float = true })
-hl.window_rule({ name = "clipse-gui-center", match = { class = "clipse-gui" }, center = true })
-hl.window_rule({ name = "clipse-gui-size", match = { class = "clipse-gui" }, size = { 560, 570 } })
+hl.window_rule({
+	name = "clipse-gui",
+	match = {
+		class = "clipse-gui",
+	},
+	float = true,
+	center = true,
+	size = { 560, 570 },
+})
 
-hl.window_rule({ name = "localsend-float", match = { class = "localsend" }, float = true })
-hl.window_rule({ name = "localsend-center", match = { class = "localsend" }, center = true })
-hl.window_rule({ name = "localsend-size", match = { class = "localsend" }, size = { 560, 570 } })
+hl.window_rule({
+	name = "localsend",
+	match = {
+		class = "localsend",
+	},
+	float = true,
+	center = true,
+	size = { 560, 570 },
+})
 
-hl.window_rule({ name = "steam", match = { class = "steam" }, workspace = "3" })
+hl.window_rule({
+	name = "lxqt-policykit-agent",
+	match = {
+		class = "lxqt-policykit-agent",
+	},
+	float = true,
+	center = true,
+	size = { 1000, 500 },
+})
 
-hl.window_rule({ name = "lxqt-policykit-agent-float", match = { class = "lxqt-policykit-agent" }, float = true })
-hl.window_rule({ name = "lxqt-policykit-agent-center", match = { class = "lxqt-policykit-agent" }, center = true })
-hl.window_rule({ name = "lxqt-policykit-agent-size", match = { class = "lxqt-policykit-agent" }, size = { 1000, 500 } })
+hl.window_rule({
+	name = "steam",
+	match = {
+		class = "steam",
+	},
+	workspace = "3",
+})
 
 -- Variables://wiki.hyprland.org/Configuring/Keywords/ for more
 local mod = "SUPER"
