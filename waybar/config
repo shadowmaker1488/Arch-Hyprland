@@ -87,6 +87,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "kitty -e pulsemixer"
+        "on-click": "kitty -e pulsemixer",
+        "on-click-right": "kitty -e bluetui"
     },
 }

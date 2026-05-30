@@ -29,6 +29,8 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("playerctld daemon")
 	hl.exec_cmd("/usr/bin/pypr")
 	hl.exec_cmd("clipse -listen")
+	hl.exec_cmd("[workspace special:ncspot silent] kitty -e ncspot")
+	hl.exec_cmd("[workspace special:htop silent] kitty -e htop")
 end)
 
 -- Env. variables
@@ -69,8 +71,8 @@ hl.config({
 		-- See https://wiki.hyprland.org/Configuring/Variables/ for more
 		-- Color picker (https://www.w3schools.com/colors/colors_picker.asp)
 
-		gaps_in = 3,
-		gaps_out = 4,
+		gaps_in = 2,
+		gaps_out = 2,
 		border_size = 2,
 		col = {
 			active_border = { colors = { "rgb(9966ff)", "rgb(9966ff)" }, angle = 45 },
@@ -278,10 +280,11 @@ hl.bind(mod .. " + W", hl.dsp.exec_cmd("waypaper"))
 hl.bind(mod .. " + V", hl.dsp.exec_cmd("clipse-gui"))
 hl.bind(mod .. " + P", hl.dsp.exec_cmd("localsend"))
 
--- Pypr scratchpads
-hl.bind(mod .. " + S", hl.dsp.exec_cmd("pypr toggle music"))
-hl.bind(mod .. " + T", hl.dsp.exec_cmd("pypr toggle htop"))
-
+-- Scratchpad
+hl.bind(mod .. " + SHIFT + Z", hl.dsp.window.move({ workspace = "special:magic" }))
+hl.bind(mod .. " + Z", hl.dsp.workspace.toggle_special("magic"))
+hl.bind(mod .. " + S", hl.dsp.workspace.toggle_special("ncspot"))
+hl.bind(mod .. " + T", hl.dsp.workspace.toggle_special("htop"))
 -- Printscreen
 hl.bind("Print", hl.dsp.exec_cmd("grimblast --notify --freeze copysave screen"))
 hl.bind("SHIFT + Print", hl.dsp.exec_cmd("grimblast copysave area --freeze --notify"))

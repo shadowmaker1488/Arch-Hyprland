@@ -88,6 +88,7 @@ yay -S hyprcursor --noconfirm
 yay -S hypridle --noconfirm
 yay -S hyprland --noconfirm
 yay -S hyprland-qtutils --noconfirm
+yay -S hyprlock --noconfirm
 yay -S hyprpicker --noconfirm
 yay -S imagemagick --noconfirm
 yay -S kitty --noconfirm
@@ -110,7 +111,6 @@ yay -S ouch --noconfirm
 yay -S paccache-hook --noconfirm
 yay -S perl-image-exiftool --noconfirm
 yay -S pulsemixer --noconfirm
-yay -S pyprland --noconfirm
 yay -S python-ffsubsync --noconfirm
 yay -S python-ffsubsync-venv --noconfirm
 yay -S python-pipx --noconfirm
@@ -125,7 +125,6 @@ yay -S rofi-calc-git --noconfirm
 yay -S simple-mtpfs --noconfirm
 yay -S subliminal --noconfirm
 yay -S subliminal-git --noconfirm
-yay -S hyprlock --noconfirm
 yay -S swaync --noconfirm
 yay -S system-config-printer --noconfirm
 yay -S timeshift --noconfirm
