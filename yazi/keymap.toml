@@ -83,7 +83,6 @@ keymap = [
 	{ on = [ "<C-s>" ],     run = "search none",                desc = "Cancel the ongoing search" },
 	{ on = [ "z" ],         run = "plugin zoxide",              desc = "Jump to a directory using zoxide" },
 	{ on = [ "Z" ],         run = "plugin fzf",                 desc = "Jump to a directory, or reveal a file using fzf" },
-	{ on = [ "<C-n>" ], run = ''' shell 'dragon-drop -x -i -T "$1"' --confirm ''',	desc = "Drag & Drop" },
 	{ on = [ "<C-m>" ],         run = "plugin mount",                 desc = "Mount devices" },
 
 	# Copy
@@ -319,9 +318,29 @@ run  = "plugin chmod"
 desc = "Chmod on selected files"
 
 [[mgr.prepend_keymap]]
-on = ["c", "a"]
-run = "plugin ouch"
-desc = "Compress archives with ouch"
+on   = [ "c", "a", "a" ]
+run  = "plugin compress"
+desc = "Archive selected files"
+
+[[mgr.prepend_keymap]]
+on   = [ "c", "a", "p" ]
+run  = "plugin compress -p"
+desc = "Archive selected files (password)"
+
+[[mgr.prepend_keymap]]
+on   = [ "c", "a", "h" ]
+run  = "plugin compress -ph"
+desc = "Archive selected files (password+header)"
+
+[[mgr.prepend_keymap]]
+on   = [ "c", "a", "l" ]
+run  = "plugin compress -l"
+desc = "Archive selected files (compression level)"
+
+[[mgr.prepend_keymap]]
+on   = [ "c", "a", "u" ]
+run  = "plugin compress -phl"
+desc = "Archive selected files (password+header+level)"
 
 [[mgr.prepend_keymap]]
 on  = "y"

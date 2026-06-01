@@ -36,7 +36,7 @@ sudo sed -i 's/#AutoEnable=true/AutoEnable=false' /etc/bluetooth/main.conf
 sudo pacman -Syu --noconfirm
 
 # basic files
-mkdir ~/.local && mkdir ~/.local/bin/
+mkdir ~/.local && mkdir ~/.local/bin/ -p
 
 mv ~/.config/Obrázky .
 mv ~/.config/zshrc ~/.zshrc
@@ -48,132 +48,20 @@ mv ~/.config/icons ~/.icons
 # EFI shell to systemd-boot
 # install programs
 # update file saving location
-sudo cp /usr/share/edk2-shell/x64/Shell.efi /boot/shellx64.efi
 
 xdg-user-dirs-update
-yay -S adobe-source-han-sans-cn-fonts --noconfirm
-yay -S adobe-source-han-sans-jp-fonts --noconfirm
-yay -S adobe-source-han-sans-kr-fonts --noconfirm
-yay -S adwaita-fonts --noconfirm
-yay -S atool --noconfirm
-yay -S awww --noconfirm
-yay -S bat --noconfirm
-yay -S bluetui --noconfirm
-yay -S breeze --noconfirm
-yay -S brightnessctl --noconfirm
-yay -S calcurse --noconfirm
-yay -S caligula --noconfirm
-yay -S cantarell-fonts --noconfirm
-yay -S clamtk --noconfirm
-yay -S clipse --noconfirm
-yay -S clipse-gui --noconfirm
-yay -S cronie --noconfirm
-yay -S cups --noconfirm
-yay -S deluge --noconfirm
-yay -S downgrade --noconfirm
-yay -S dragon-drop-git --noconfirm
-yay -S dysk --noconfirm
-yay -S edk2-shell --noconfirm
-yay -S fastfetch --noconfirm
-yay -S firefox --noconfirm
-yay -S fzf --noconfirm
-yay -S gdu --noconfirm
-yay -S gparted --noconfirm
-yay -S grimblast-git --noconfirm
-yay -S grubforge --noconfirm
-yay -S gst-plugins-good --noconfirm
-yay -S gvfs --noconfirm
-yay -S htop --noconfirm
-yay -S hyprcursor --noconfirm
-yay -S hypridle --noconfirm
-yay -S hyprland --noconfirm
-yay -S hyprland-qtutils --noconfirm
-yay -S hyprlock --noconfirm
-yay -S hyprpicker --noconfirm
-yay -S imagemagick --noconfirm
-yay -S kitty --noconfirm
-yay -S libreoffice-still --noconfirm
-yay -S libreoffice-still-cs --noconfirm
-yay -S localsend --noconfirm
-yay -S lxqt-policykit --noconfirm
-yay -S lynx --noconfirm
-yay -S man-db --noconfirm
-yay -S mediainfo --noconfirm
-yay -S mpv --noconfirm
-yay -S mpv-mpris --noconfirm
-yay -S ncspot --noconfirm
-yay -S neovim --noconfirm
-yay -S newsboat --noconfirm
-yay -S noto-fonts-emoji --noconfirm
-yay -S ntfs-3g --noconfirm
-yay -S nwg-look --noconfirm
-yay -S ouch --noconfirm
-yay -S paccache-hook --noconfirm
-yay -S perl-image-exiftool --noconfirm
-yay -S pulsemixer --noconfirm
-yay -S python-ffsubsync --noconfirm
-yay -S python-ffsubsync-venv --noconfirm
-yay -S python-pipx --noconfirm
-yay -S qimgv-git --noconfirm
-yay -S qt5-wayland --noconfirm
-yay -S qt5ct --noconfirm
-yay -S qt6-wayland --noconfirm
-yay -S qt6ct --noconfirm
-yay -S reflector --noconfirm
-yay -S rofi --noconfirm
-yay -S rofi-calc-git --noconfirm
-yay -S simple-mtpfs --noconfirm
-yay -S subliminal --noconfirm
-yay -S subliminal-git --noconfirm
-yay -S swaync --noconfirm
-yay -S system-config-printer --noconfirm
-yay -S timeshift --noconfirm
-yay -S tlp --noconfirm
-yay -S tlpui --noconfirm
-yay -S topgrade --noconfirm
-yay -S trashy --noconfirm
-yay -S tree --noconfirm
-yay -S ttf-jetbrains-mono-nerd --noconfirm
-yay -S ttf-meslo-nerd --noconfirm
-yay -S ttf-ms-win11-auto --noconfirm
-yay -S ttf-roboto --noconfirm
-yay -S udiskie --noconfirm
-yay -S ufw --noconfirm
-yay -S unrar --noconfirm
-yay -S unzip --noconfirm
-yay -S uwsm --noconfirm
-yay -S veracrypt --noconfirm
-yay -S waybar --noconfirm
-yay -S waypaper-git --noconfirm
-yay -S wev --noconfirm
-yay -S wf-recorder --noconfirm
-yay -S wl-clipboard --noconfirm
-yay -S wlsunset --noconfirm
-yay -S woff2-font-awesome --noconfirm
-yay -S xdg-desktop-portal-gtk --noconfirm
-yay -S xdg-desktop-portal-hyprland --noconfirm
-yay -S xdg-user-dirs --noconfirm
-yay -S xidel-bin --noconfirm
-yay -S xorg-xhost --noconfirm
-yay -S yazi --noconfirm
-yay -S ydotool --noconfirm
-yay -S yt-dlp --noconfirm
-yay -S zathura --noconfirm
-yay -S zathura-cb --noconfirm
-yay -S zathura-pdf-mupdf --noconfirm
-yay -S zip --noconfirm
-yay -S zoxide --noconfirm
-yay -S zsh --noconfirm
+yay -S adobe-source-han-sans-cn-fonts adobe-source-han-sans-jp-fonts adobe-source-han-sans-kr-fonts adwaita-fonts atool awww bat bluetui breeze brightnessctl calcurse caligula cantarell-fonts clamtk clipse clipse-gui cronie cups deluge downgrade dysk edk2-shell fastfetch firefox fzf gdu gparted grimblast-git grubforge gst-plugins-good gvfs htop hyprcursor hypridle hyprland hyprland-qtutils hyprlock hyprpicker imagemagick kitty libreoffice-still libreoffice-still-cs localsend lxqt-policykit lynx man-db mediainfo mpv mpv-mpris ncspot neovim newsboat noto-fonts-emoji ntfs-3g nwg-look ouch paccache-hook perl-image-exiftool pulsemixer python-ffsubsync python-ffsubsync-venv python-pipx qimgv-git qt5-wayland qt5ct qt6-wayland qt6ct reflector rofi rofi-calc-git simple-mtpfs subliminal subliminal-git swaync system-config-printer timeshift tlp tlpui topgrade trashy tree ttf-jetbrains-mono-nerd ttf-meslo-nerd ttf-ms-win11-auto ttf-roboto udiskie ufw unrar unzip uwsm veracrypt waybar waypaper-git wev wf-recorder wl-clipboard wlsunset woff2-font-awesome xdg-desktop-portal-gtk xdg-desktop-portal-hyprland xdg-user-dirs xidel-bin xorg-xhost yazi ydotool yt-dlp zathura zathura-cb zathura-pdf-mupdf zip zoxide zsh --noconfirm
+
 # services
 sudo systemctl enable systemd-boot-update.service
 sudo systemctl enable tlp
 sudo systemctl enable ufw
 sudo ufw enable
 sudo systemctl enable cronie
-sudo updatedb
 sudo systemctl enable reflector.timer
 sudo systemctl mask systemd-rfkill.service
 sudo systemctl mask systemd-rfkill.socket
+sudo cp /usr/share/edk2-shell/x64/Shell.efi /boot/shellx64.efi
 
 # set default xdg
 # Browser xdg
@@ -223,7 +111,7 @@ ya pack -a yazi-rs/plugins:mount
 ya pack -a ndtoan96/ouch
 
 # Oh my zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+RUNZSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
