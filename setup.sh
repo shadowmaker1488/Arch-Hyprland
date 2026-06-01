@@ -1,13 +1,14 @@
 #!/bin/bash
 
+# update system
+sudo pacman -Syu --noconfirm
+sudo pacman -S base-devel --noconfirm
+
 # yay install
 git clone https://aur.archlinux.org/yay.git ~/.config/yay
 cd ~/.config/yay
 makepkg -si --noconfirm
 cd
-
-# update system
-sudo pacman -Syu --noconfirm
 
 # chaotic AUR
 
@@ -36,7 +37,7 @@ sudo sed -i 's/#AutoEnable=true/AutoEnable=false' /etc/bluetooth/main.conf
 sudo pacman -Syu --noconfirm
 
 # basic files
-mkdir ~/.local && mkdir ~/.local/bin/ -p
+mkdir ~/.local && mkdir ~/.local/bin/
 
 mv ~/.config/Obrázky .
 mv ~/.config/zshrc ~/.zshrc
