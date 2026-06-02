@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# update system
-sudo pacman -Syu --noconfirm
 sudo pacman -S base-devel --noconfirm
 
 # yay install
@@ -9,6 +7,9 @@ git clone https://aur.archlinux.org/yay.git ~/.config/yay
 cd ~/.config/yay
 makepkg -si --noconfirm
 cd
+
+# update system
+sudo pacman -Syu --noconfirm
 
 # chaotic AUR
 
@@ -32,12 +33,11 @@ fi
 # sed stuff
 sudo sed -i 's/^#Color/Color/' /etc/pacman.conf
 sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
-sudo sed -i 's/#AutoEnable=true/AutoEnable=false' /etc/bluetooth/main.conf
-
+sudo sed -i 's/#AutoEnable=true/AutoEnable=false/' /etc/bluetooth/main.conf
 sudo pacman -Syu --noconfirm
 
 # basic files
-mkdir ~/.local && mkdir ~/.local/bin/
+mkdir -p ~/.local && mkdir ~/.local/bin/
 
 mv ~/.config/Obrázky .
 mv ~/.config/zshrc ~/.zshrc
@@ -51,7 +51,118 @@ mv ~/.config/icons ~/.icons
 # update file saving location
 
 xdg-user-dirs-update
-yay -S adobe-source-han-sans-cn-fonts adobe-source-han-sans-jp-fonts adobe-source-han-sans-kr-fonts adwaita-fonts atool awww bat bluetui breeze brightnessctl calcurse caligula cantarell-fonts clamtk clipse clipse-gui cronie cups deluge downgrade dysk edk2-shell fastfetch firefox fzf gdu gparted grimblast-git grubforge gst-plugins-good gvfs htop hyprcursor hypridle hyprland hyprland-qtutils hyprlock hyprpicker imagemagick kitty libreoffice-still libreoffice-still-cs localsend lxqt-policykit lynx man-db mediainfo mpv mpv-mpris ncspot neovim newsboat noto-fonts-emoji ntfs-3g nwg-look ouch paccache-hook perl-image-exiftool pulsemixer python-ffsubsync python-ffsubsync-venv python-pipx qimgv-git qt5-wayland qt5ct qt6-wayland qt6ct reflector rofi rofi-calc-git simple-mtpfs subliminal subliminal-git swaync system-config-printer timeshift tlp tlpui topgrade trashy tree ttf-jetbrains-mono-nerd ttf-meslo-nerd ttf-ms-win11-auto ttf-roboto udiskie ufw unrar unzip uwsm veracrypt waybar waypaper-git wev wf-recorder wl-clipboard wlsunset woff2-font-awesome xdg-desktop-portal-gtk xdg-desktop-portal-hyprland xdg-user-dirs xidel-bin xorg-xhost yazi ydotool yt-dlp zathura zathura-cb zathura-pdf-mupdf zip zoxide zsh --noconfirm
+yay -S adobe-source-han-sans-cn-fonts \
+  adobe-source-han-sans-jp-fonts \
+  adobe-source-han-sans-kr-fonts \
+  adwaita-fonts \
+  atool \
+  awww \
+  bat \
+  bluetui \
+  breeze \
+  brightnessctl \
+  calcurse \
+  caligula \
+  cantarell-fonts \
+  clamtk \
+  clipse \
+  clipse-gui \
+  cronie \
+  cups \
+  deluge \
+  downgrade \
+  dysk \
+  edk2-shell \
+  fastfetch \
+  firefox \
+  fzf \
+  gdu \
+  gparted \
+  grimblast-git \
+  grubforge \
+  gst-plugins-good \
+  gvfs \
+  htop \
+  hyprcursor \
+  hypridle \
+  hyprland \
+  hyprland-qtutils \
+  hyprlock \
+  hyprpicker \
+  imagemagick \
+  kitty \
+  libreoffice-still \
+  libreoffice-still-cs \
+  localsend \
+  lxqt-policykit \
+  lynx \
+  man-db \
+  mediainfo \
+  mpv \
+  mpv-mpris \
+  ncspot \
+  neovim \
+  newsboat \
+  noto-fonts-emoji \
+  ntfs-3g \
+  nwg-look \
+  ouch \
+  paccache-hook \
+  perl-image-exiftool \
+  pulsemixer \
+  python-ffsubsync \
+  python-ffsubsync-venv \
+  python-pipx \
+  qimgv-git \
+  qt5-wayland \
+  qt5ct \
+  qt6-wayland \
+  qt6ct \
+  reflector \
+  rofi \
+  rofi-calc-git \
+  simple-mtpfs \
+  subliminal \
+  subliminal-git \
+  swaync \
+  system-config-printer \
+  timeshift \
+  tlp \
+  tlpui \
+  topgrade \
+  trashy \
+  tree \
+  ttf-jetbrains-mono-nerd \
+  ttf-meslo-nerd \
+  ttf-ms-win11-auto \
+  ttf-roboto \
+  udiskie \
+  ufw \
+  unrar \
+  unzip \
+  uwsm \
+  veracrypt \
+  waybar \
+  waypaper-git \
+  wev \
+  wf-recorder \
+  wl-clipboard \
+  wlsunset \
+  woff2-font-awesome \
+  xdg-desktop-portal-gtk \
+  xdg-desktop-portal-hyprland \
+  xdg-user-dirs \
+  xidel-bin \
+  xorg-xhost \
+  yazi \
+  ydotool \
+  yt-dlp \
+  zathura \
+  zathura-cb \
+  zathura-pdf-mupdf \
+  zip \
+  zoxide \
+  zsh --noconfirm
 
 # services
 sudo systemctl enable systemd-boot-update.service
@@ -93,7 +204,7 @@ xdg-mime default libreoffice-draw.desktop application/vnd.oasis.opendocument.gra
 xdg-mime default libreoffice-math.desktop application/vnd.oasis.opendocument.formula
 
 # Browser
-xdg-mime default firefox.desktop c-scheme-handler/http
+xdg-mime default firefox.desktop x-scheme-handler/http
 
 # složky
 sudo mkdir /mnt/Disk2 && sudo chown $USER:$USER /mnt/Disk2
@@ -106,7 +217,7 @@ ya pack -a yazi-rs/plugins#chmod
 ya pack -a KKV9/compress
 
 # Yazi mount plugin
-ya pack -a yazi-rs/plugins:mount
+ya pack -a yazi-rs/plugins#mount
 
 # yazi ouch archives
 ya pack -a ndtoan96/ouch
