@@ -136,7 +136,7 @@ keymap = [
 
 	# Goto
 	{ on = [ "g", "h" ],       run = "cd ~",             desc = "Go home directory" },
-	{ on = [ "g", "u" ],       run = "cd /run/media/tom/",             desc = "Go removable media" },
+	{ on = [ "g", "u" ],       run = "cd /run/media",             desc = "Go media" },
 	{ on = [ "g", "c" ],       run = "cd ~/.config",     desc = "Go config"  },
 	{ on = [ "g", "s" ],       run = "cd ~/Stažené",   desc = "Go downloads" },
 	{ on = [ "g", "o" ],       run = "cd ~/Obrázky",   desc = "Go Obrázky" },

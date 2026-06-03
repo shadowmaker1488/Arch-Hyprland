@@ -147,7 +147,7 @@ yay -S adobe-source-han-sans-cn-fonts \
   wev \
   wf-recorder \
   wl-clipboard \
-  wlsunset \
+  hyprsunset \
   woff2-font-awesome \
   xdg-desktop-portal-gtk \
   xdg-desktop-portal-hyprland \
