@@ -79,7 +79,6 @@ yay -S adobe-source-han-sans-cn-fonts \
   gdu \
   gparted \
   grimblast-git \
-  grubforge \
   gst-plugins-good \
   gvfs \
   htop \
@@ -93,6 +92,7 @@ yay -S adobe-source-han-sans-cn-fonts \
   kitty \
   libreoffice-still \
   libreoffice-still-cs \
+  limine-mkinitcpio-hook \
   localsend \
   lxqt-policykit \
   lynx \
@@ -122,7 +122,6 @@ yay -S adobe-source-han-sans-cn-fonts \
   rofi \
   rofi-calc-git \
   simple-mtpfs \
-  subliminal \
   subliminal-git \
   swaync \
   system-config-printer \
