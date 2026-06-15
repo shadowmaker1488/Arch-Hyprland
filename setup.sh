@@ -100,7 +100,7 @@ yay -S adobe-source-han-sans-cn-fonts \
   mediainfo \
   mpv \
   mpv-mpris \
-  ncspot \
+  ncspot-git \
   neovim \
   newsboat \
   noto-fonts-emoji \
