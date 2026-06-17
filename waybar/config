@@ -32,6 +32,11 @@
         // "icon-size": 21,
         "spacing": 10
     },
+    "hyprland/window": {
+    "max-length": 50,
+    "separate-outputs": true,
+  },
+
     "clock": {
         "timezone": "Europe/Prague",
 	"format": "{:%A %e. %B %Y (%H:%M)}",
