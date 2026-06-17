@@ -27,8 +27,8 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("udiskie")
 	hl.exec_cmd("playerctld daemon")
 	hl.exec_cmd("clipse -listen")
-	hl.exec_cmd("[workspace special:ncspot silent] foot -e ncspot")
-	hl.exec_cmd("[workspace special:htop silent] foot -e htop")
+	hl.exec_cmd("[workspace special:ncspot silent] kitty -e ncspot")
+	hl.exec_cmd("[workspace special:htop silent] kitty -e htop")
 end)
 
 -- Env. variables
@@ -103,7 +103,7 @@ hl.config({
 		animate_mouse_windowdragging = true, -- mouse resize animation
 		middle_click_paste = true,
 		enable_swallow = false,
-		swallow_regex = "^(foot)$",
+		swallow_regex = "^(kitty)$",
 		swallow_exception_regex = "^(wpp.*|wps.*|et.*|.*\\.tex.*|xev|wev)$",
 	},
 
@@ -237,8 +237,8 @@ hl.window_rule({
 
 -- Variables://wiki.hyprland.org/Configuring/Keywords/ for more
 local mod = "SUPER"
-local terminal = "foot"
-local filemanager = "foot -e yazi"
+local terminal = "kitty"
+local filemanager = "kitty -e yazi"
 
 -- Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
 hl.bind(mod .. " + Q", hl.dsp.window.close())

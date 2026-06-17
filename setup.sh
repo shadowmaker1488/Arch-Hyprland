@@ -89,7 +89,7 @@ yay -S adobe-source-han-sans-cn-fonts \
   hyprlock \
   hyprpicker \
   imagemagick \
-  foot \
+  kitty \
   libreoffice-still \
   libreoffice-still-cs \
   limine-mkinitcpio-hook \

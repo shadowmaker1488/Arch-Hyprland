@@ -36,7 +36,7 @@
         "timezone": "Europe/Prague",
 	"format": "{:%A %e. %B %Y (%H:%M)}",
 	"tooltip": false,
-	"on-click": "foot -e calcurse"
+	"on-click": "kitty -e calcurse"
 
     },
     "backlight": {
@@ -67,7 +67,7 @@
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ", 
         "format-linked": "{ifname} (No IP) ",
-	      "on-click": "foot -e nmtui",
+	      "on-click": "kitty -e nmtui",
         "format-disconnected": "Odpojeno ⚠",
     },
     "pulseaudio": {
@@ -87,7 +87,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "foot -e pulsemixer",
-        "on-click-right": "foot -e bluetui"
+        "on-click": "kitty -e pulsemixer",
+        "on-click-right": "kitty -e bluetui"
     },
 }
