@@ -19,17 +19,16 @@ hl.monitor({
 hl.on("hyprland.start", function()
 	hl.exec_cmd("waybar")
 	hl.exec_cmd("hypridle")
-	hl.exec_cmd("deluged")
 	hl.exec_cmd("awww-daemon")
-	hl.exec_cmd("swaync")
+	hl.exec_cmd("mako")
 	hl.exec_cmd("~/.config/hypr/scripts/xdg-portal-hyprland")
 	hl.exec_cmd("lxqt-policykit-agent")
-	hl.exec_cmd("~/.config/hypr/scripts/wlsunset.sh")
+	hl.exec_cmd("hyprsunset")
 	hl.exec_cmd("udiskie")
 	hl.exec_cmd("playerctld daemon")
 	hl.exec_cmd("clipse -listen")
-	hl.exec_cmd("[workspace special:ncspot silent] kitty -e ncspot")
-	hl.exec_cmd("[workspace special:htop silent] kitty -e htop")
+	hl.exec_cmd("[workspace special:ncspot silent] foot -e ncspot")
+	hl.exec_cmd("[workspace special:htop silent] foot -e htop")
 end)
 
 -- Env. variables
@@ -104,7 +103,7 @@ hl.config({
 		animate_mouse_windowdragging = true, -- mouse resize animation
 		middle_click_paste = true,
 		enable_swallow = false,
-		swallow_regex = "^(kitty)$",
+		swallow_regex = "^(foot)$",
 		swallow_exception_regex = "^(wpp.*|wps.*|et.*|.*\\.tex.*|xev|wev)$",
 	},
 
@@ -238,8 +237,8 @@ hl.window_rule({
 
 -- Variables://wiki.hyprland.org/Configuring/Keywords/ for more
 local mod = "SUPER"
-local terminal = "kitty"
-local filemanager = "kitty -e yazi"
+local terminal = "foot"
+local filemanager = "foot -e yazi"
 
 -- Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
 hl.bind(mod .. " + Q", hl.dsp.window.close())
@@ -252,6 +251,7 @@ hl.bind(mod .. " + Delete", hl.dsp.exec_cmd("hyprctl kill"))
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"))
 hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"))
 hl.bind("XF86AudioMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"))
+hl.bind(mod .. "+ SHIFT + N", hl.dsp.exec_cmd("makoctl restore"))
 
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"))
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"))
@@ -279,12 +279,14 @@ hl.bind(mod .. " + N", hl.dsp.exec_cmd(terminal .. " -e newsboat"))
 hl.bind(mod .. " + W", hl.dsp.exec_cmd("waypaper"))
 hl.bind(mod .. " + V", hl.dsp.exec_cmd("clipse-gui"))
 hl.bind(mod .. " + P", hl.dsp.exec_cmd("localsend"))
+hl.bind(mod .. "+ ALT + P", hl.dsp.exec_cmd("wl-freeze -a"))
 
 -- Scratchpad
 hl.bind(mod .. " + SHIFT + Z", hl.dsp.window.move({ workspace = "special:magic" }))
 hl.bind(mod .. " + Z", hl.dsp.workspace.toggle_special("magic"))
 hl.bind(mod .. " + S", hl.dsp.workspace.toggle_special("ncspot"))
 hl.bind(mod .. " + T", hl.dsp.workspace.toggle_special("htop"))
+
 -- Printscreen
 hl.bind("Print", hl.dsp.exec_cmd("grimblast --notify --freeze copysave screen"))
 hl.bind("SHIFT + Print", hl.dsp.exec_cmd("grimblast copysave area --freeze --notify"))

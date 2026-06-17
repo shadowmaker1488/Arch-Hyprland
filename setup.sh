@@ -51,6 +51,7 @@ mv ~/.config/icons ~/.icons
 # update file saving location
 
 xdg-user-dirs-update
+
 yay -S adobe-source-han-sans-cn-fonts \
   adobe-source-han-sans-jp-fonts \
   adobe-source-han-sans-kr-fonts \
@@ -69,7 +70,6 @@ yay -S adobe-source-han-sans-cn-fonts \
   clipse-gui \
   cronie \
   cups \
-  deluge \
   downgrade \
   dysk \
   edk2-shell \
@@ -89,7 +89,7 @@ yay -S adobe-source-han-sans-cn-fonts \
   hyprlock \
   hyprpicker \
   imagemagick \
-  kitty \
+  foot \
   libreoffice-still \
   libreoffice-still-cs \
   limine-mkinitcpio-hook \
@@ -123,7 +123,7 @@ yay -S adobe-source-han-sans-cn-fonts \
   rofi-calc-git \
   simple-mtpfs \
   subliminal-git \
-  swaync \
+  mako \
   system-config-printer \
   timeshift \
   tlp \

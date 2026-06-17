@@ -1,7 +1,7 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 51, // Waybar height (to be removed for auto height)
+    "height": 41, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 5, // Gaps between modules (4px)
     // Choose the order of the modules
@@ -36,7 +36,7 @@
         "timezone": "Europe/Prague",
 	"format": "{:%A %e. %B %Y (%H:%M)}",
 	"tooltip": false,
-	"on-click": "kitty -e calcurse"
+	"on-click": "foot -e calcurse"
 
     },
     "backlight": {
@@ -67,7 +67,7 @@
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ", 
         "format-linked": "{ifname} (No IP) ",
-	      "on-click": "kitty -e nmtui",
+	      "on-click": "foot -e nmtui",
         "format-disconnected": "Odpojeno ⚠",
     },
     "pulseaudio": {
@@ -87,7 +87,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "kitty -e pulsemixer",
-        "on-click-right": "kitty -e bluetui"
+        "on-click": "foot -e pulsemixer",
+        "on-click-right": "foot -e bluetui"
     },
 }
