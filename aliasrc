@@ -9,7 +9,6 @@ alias cat="bat"
 #alias df="df -h -x tmpfs"
 alias f="fzf"
 alias n="nvim"
-alias sn="sudo nvim"
 alias batteryinfo="upower -i /org/freedesktop/UPower/devices/battery_BAT1"
 
 # APPS

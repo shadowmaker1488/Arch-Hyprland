@@ -41,6 +41,8 @@
         "timezone": "Europe/Prague",
 	"format": "{:%A %e. %B %Y (%H:%M)}",
 	"tooltip": false,
+  "locale": "cs_CZ.UTF-8",
+  "format": "{:L%A %d. %B %Y (%H:%M)}",
 	"on-click": "kitty -e calcurse"
 
     },
