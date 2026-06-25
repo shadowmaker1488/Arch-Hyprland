@@ -208,7 +208,6 @@ xdg-mime default firefox.desktop x-scheme-handler/http
 
 # složky
 sudo mkdir /mnt/Disk2 && sudo chown $USER:$USER /mnt/Disk2
-sudo mkdir /mnt/phone && sudo chown $USER:$USER /mnt/phone
 
 # Yazi chmod plugin
 ya pack -a yazi-rs/plugins#chmod
