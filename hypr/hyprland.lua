@@ -243,7 +243,7 @@ local filemanager = "kitty -e yazi"
 
 -- Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
 hl.bind(mod .. " + Q", hl.dsp.window.close())
-hl.bind(mod .. " + Space", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mod .. " + SHIFT + F", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mod .. " + SHIFT + S", hl.dsp.layout("togglesplit"))
 hl.bind(mod .. " + F", hl.dsp.window.fullscreen({ action = "toggle" }))
 hl.bind(mod .. " + Delete", hl.dsp.exec_cmd("hyprctl kill"))
@@ -293,7 +293,7 @@ hl.bind("Print", hl.dsp.exec_cmd("grimblast --notify --freeze copysave screen"))
 hl.bind("SHIFT + Print", hl.dsp.exec_cmd("grimblast copysave area --freeze --notify"))
 
 -- Rofi Controls
-hl.bind(mod .. " + SHIFT + F", hl.dsp.exec_cmd("rofi -show drun"))
+hl.bind(mod .. " + Space", hl.dsp.exec_cmd("rofi -show drun"))
 hl.bind(mod .. " + SHIFT + C", hl.dsp.exec_cmd("~/.config/rofi/scripts/rofi-calc.sh"))
 hl.bind(mod .. " + SHIFT + W", hl.dsp.exec_cmd("~/.config/waybar/scripts/waybar-theme.sh"))
 hl.bind(mod .. " + Escape", hl.dsp.exec_cmd("~/.config/rofi/scripts/rofi-powermenu.sh"))

@@ -66,7 +66,7 @@ yay -S adobe-source-han-sans-cn-fonts \
   calcurse \
   caligula \
   cantarell-fonts \
-  clamtk \
+  clamav \
   clipse \
   clipse-gui \
   cronie \
@@ -162,6 +162,7 @@ yay -S adobe-source-han-sans-cn-fonts \
   zathura-pdf-mupdf \
   zip \
   zoxide \
+  wl-freeze \
   zsh --noconfirm
 
 # services
